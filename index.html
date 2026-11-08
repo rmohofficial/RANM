@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حركة الرمح الآشوري الوطنية | Rmoh Assyrian National Movement</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #14294d;
+            --glass-bg: rgba(220, 230, 255, 0.10);
+            --glass-border: rgba(255, 255, 255, 0.22);
+            --text-color: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica World', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        /* الهيدر وشعار الحركة */
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Noto Kufi Arabic', sans-serif;
+        }
+
+        .logo-title {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+        }
+
+        .logo-subtitle {
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 16px;
+            text-transform: uppercase;
+        }
+
+        .welcome-text {
+            font-family: 'Noto Kufi Arabic', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            color: #ffffff;
+        }
+
+        /* البطاقات الزجاجية المطفية */
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 24px;
+            width: 100%;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .glass-card p {
+            font-size: 15px;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        /* الأقسام الثلاثة للخدمات التنظيمية */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            width: 100%;
+        }
+
+        .service-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .service-card:hover {
+            background: rgba(220, 230, 255, 0.15);
+            transform: translateY(-3px);
+        }
+
+        .service-card h4 {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- القسم الأول: الهيدر والترحيب -->
+        <div class="header">
+            <h1 class="logo-title">حركة الرمح الآشوري الوطنية</h1>
+            <div class="logo-subtitle">Rmoh Assyrian National Movement | RANM</div>
+            <div class="welcome-text">«أهلاً بحامل الرسالة الآشورية»</div>
+        </div>
+
+        <!-- بطاقة عهد الحركة -->
+        <div class="glass-card">
+            <h3>عهد الحركة</h3>
+            <p>نص عهد الحركة الأساسي والثابت على المبادئ الوطنية والوفاء للوطن.</p>
+        </div>
+
+        <!-- بطاقة الأسئلة الشائعة -->
+        <div class="glass-card">
+            <h3>الأسئلة الشائعة</h3>
+            <p>إجابات واضحة حول أهداف الحركة، رؤيتها، وطبيعة عملها التنظيمي.</p>
+        </div>
+
+        <!-- القسم الثاني: الخدمات التنظيمية الثلاث -->
+        <div class="services-grid">
+            <div class="service-card">
+                <h4>طلب الانضمام</h4>
+            </div>
+            <div class="service-card">
+                <h4>قيادة الحركة</h4>
+            </div>
+            <div class="service-card">
+                <h4>أرشيف الحركة</h4>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
